@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="*" />
+    <ProjectReference Include="..\NServiceBus.Utf8Json\NServiceBus.Utf8Json.csproj" />
+  </ItemGroup>
+</Project>
