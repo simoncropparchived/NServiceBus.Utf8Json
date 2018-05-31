@@ -4,7 +4,8 @@
     <TargetFramework>net462</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="*" />
+    <PackageReference Include="Xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <ProjectReference Include="..\NServiceBus.Utf8Json\NServiceBus.Utf8Json.csproj" />
   </ItemGroup>
 </Project>

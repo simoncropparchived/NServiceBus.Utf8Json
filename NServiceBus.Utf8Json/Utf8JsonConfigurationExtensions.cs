@@ -1,4 +1,4 @@
-﻿using NServiceBus.Configuration.AdvanceExtensibility;
+﻿using NServiceBus.Configuration.AdvancedExtensibility;
 using NServiceBus.Serialization;
 using NServiceBus.Settings;
 using NServiceBus.Utf8Json;
@@ -19,6 +19,7 @@ namespace NServiceBus
         public static void Resolver(this SerializationExtensions<Utf8JsonSerializer> config, IJsonFormatterResolver resolver)
         {
             Guard.AgainstNull(config, nameof(config));
+            Guard.AgainstNull(resolver, nameof(resolver));
             var settings = config.GetSettings();
             settings.Set<IJsonFormatterResolver>(resolver);
         }

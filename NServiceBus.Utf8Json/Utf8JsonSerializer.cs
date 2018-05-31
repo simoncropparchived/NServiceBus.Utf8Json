@@ -15,6 +15,7 @@ namespace NServiceBus.Utf8Json
         /// </summary>
         public override Func<IMessageMapper, IMessageSerializer> Configure(ReadOnlySettings settings)
         {
+            Guard.AgainstNull(settings, nameof(settings));
             return mapper =>
             {
                 var resolver = settings.GetResolver();
