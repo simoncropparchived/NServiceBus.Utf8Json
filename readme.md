@@ -1,9 +1,4 @@
-![Icon](https://raw.githubusercontent.com/NServiceBusExtensions/NServiceBus.Utf8Json/master/icon.png)
-
-NServiceBus.Utf8Json
-===========================
-
-Add support for [NServiceBus](https://particular.net/NServiceBus) message serialization via [Utf8Json](https://github.com/neuecc/Utf8Json)
+<img src="https://raw.github.com/NServiceBusExtensions/NServiceBus.Utf8Json/master/src/icon.png" height="25px"> Add support for [NServiceBus](https://particular.net/NServiceBus) message serialization via [Utf8Json](https://github.com/neuecc/Utf8Json)
 
 
 <!--- StartOpenCollectiveBackers -->
