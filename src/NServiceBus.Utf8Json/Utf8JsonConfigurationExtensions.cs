@@ -21,7 +21,7 @@ namespace NServiceBus
             Guard.AgainstNull(config, nameof(config));
             Guard.AgainstNull(resolver, nameof(resolver));
             var settings = config.GetSettings();
-            settings.Set<IJsonFormatterResolver>(resolver);
+            settings.Set(resolver);
         }
 
         internal static IJsonFormatterResolver GetResolver(this ReadOnlySettings settings)
