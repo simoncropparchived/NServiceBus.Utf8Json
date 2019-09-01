@@ -27,7 +27,7 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 
 ## NuGet package
 
-https://nuget.org/packages/NServiceBus.Utf8Json/ [![NuGet Status](http://img.shields.io/nuget/v/NServiceBus.Utf8Json.svg?style=flat&max-age=86400)](https://www.nuget.org/packages/NServiceBus.Utf8Json/)
+https://nuget.org/packages/NServiceBus.Utf8Json/ [![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.Utf8Json.svg?style=flat&max-age=86400)](https://www.nuget.org/packages/NServiceBus.Utf8Json/)
 
 
 ## Documentation
