@@ -5,7 +5,26 @@ Source File: /readme.source.md
 To change this file edit the source file and then run MarkdownSnippets.
 -->
 
-<img src="/src/icon.png" height="25px"> Add support for [NServiceBus](https://particular.net/NServiceBus) message serialization via [Utf8Json](https://github.com/neuecc/Utf8Json)
+# <img src="/src/icon.png" height="30px"> NServiceBus.Utf8Json
+
+[![Build status](https://ci.appveyor.com/api/projects/status/oiqo5mrf54mh9iu8/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/NServiceBus.Utf8Json)
+[![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.Utf8Json.svg?cacheSeconds=86400)](https://www.nuget.org/packages/NServiceBus.Utf8Json/)
+
+
+Add support for [NServiceBus](https://particular.net/NServiceBus) message serialization via [Utf8Json](https://github.com/neuecc/Utf8Json)
+
+<!-- toc -->
+## Contents
+
+  * [Community backed](#community-backed)
+    * [Sponsors](#sponsors)
+    * [Patrons](#patrons)
+  * [Usage](#usage)
+    * [Resolver](#resolver)
+    * [Custom content key](#custom-content-key)
+  * [Currently not supported](#currently-not-supported)
+<!-- endtoc -->
+
 
 <!--- StartOpenCollectiveBackers -->
 
@@ -32,10 +51,6 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 
 <a href="#" id="endofbacking"></a>
 
-## NuGet package
-
-https://nuget.org/packages/NServiceBus.Utf8Json/ [![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.Utf8Json.svg?style=flat&max-age=86400)](https://www.nuget.org/packages/NServiceBus.Utf8Json/)
-
 
 ## Usage
 
@@ -61,7 +76,10 @@ serialization.Resolver(StandardResolver.SnakeCase);
 <sup>[snippet source](/src/Tests/Snippets/Usage.cs#L18-L23) / [anchor](#snippet-utf8jsonresolver)</sup>
 <!-- endsnippet -->
 
-include: custom-contenttype-key
+
+### Custom content key
+
+When using [additional deserializers](https://docs.particular.net/nservicebus/serialization/#specifying-additional-deserializers) or transitioning between different versions of the same serializer it can be helpful to take explicit control over the content type a serializer passes to NServiceBus (to be used for the [ContentType header](https://docs.particular.net/nservicebus/messaging/headers.md#serialization-headers-nservicebus-contenttype)).
 
 <!-- snippet: Utf8JsonContentTypeKey -->
 <a id='snippet-utf8jsoncontenttypekey'/></a>
@@ -75,8 +93,12 @@ serialization.ContentTypeKey("custom-key");
 
 ## Currently not supported
 
-The use of `DataBusProperty<T>` is not supported because the property doesn't provide a default constructor. However, the use of the [databus conventions](/nservicebus/messaging/databus) is supported.
+The use of `DataBusProperty<T>` is not supported because the property doesn't provide a default constructor. However, the use of the [databus conventions](https://docs.particular.net/nservicebus/messaging/databus) is supported.
 
+
+## Release Notes
+
+See [closed milestones](../../milestones?state=closed).
 
 
 ## Icon

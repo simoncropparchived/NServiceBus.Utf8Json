@@ -7,7 +7,8 @@ using NServiceBus.MessageInterfaces;
 using NServiceBus.Serialization;
 using Utf8Json;
 
-class JsonMessageSerializer : IMessageSerializer
+class JsonMessageSerializer :
+    IMessageSerializer
 {
     IMessageMapper messageMapper;
 

@@ -8,7 +8,8 @@ namespace NServiceBus.Utf8Json
     /// <summary>
     /// Defines the capabilities of the Utf8Json serializer
     /// </summary>
-    public class Utf8JsonSerializer : SerializationDefinition
+    public class Utf8JsonSerializer :
+        SerializationDefinition
     {
         /// <summary>
         /// <see cref="SerializationDefinition.Configure"/>
