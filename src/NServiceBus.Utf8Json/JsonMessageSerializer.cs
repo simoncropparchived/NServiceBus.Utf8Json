@@ -21,7 +21,7 @@ class JsonMessageSerializer :
 
         if (resolver == null)
         {
-            this.resolver = global::Utf8Json.JsonSerializer.DefaultResolver;
+            this.resolver = Utf8Json.JsonSerializer.DefaultResolver;
         }
         else
         {
@@ -42,7 +42,7 @@ class JsonMessageSerializer :
     {
         try
         {
-            global::Utf8Json.JsonSerializer.NonGeneric.Serialize(message.GetType(), stream, message, resolver);
+            Utf8Json.JsonSerializer.NonGeneric.Serialize(message.GetType(), stream, message, resolver);
         }
         catch (TypeAccessException exception)
         {
@@ -65,7 +65,7 @@ class JsonMessageSerializer :
 
                 try
                 {
-                    return global::Utf8Json.JsonSerializer.NonGeneric.Deserialize(messageType, stream, resolver);
+                    return Utf8Json.JsonSerializer.NonGeneric.Deserialize(messageType, stream, resolver);
                 }
                 catch (TypeAccessException exception)
                 {
