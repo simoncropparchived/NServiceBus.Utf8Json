@@ -4,30 +4,30 @@ using Utf8Json.Resolvers;
 
 class Usage
 {
-    Usage(EndpointConfiguration endpointConfiguration)
+    Usage(EndpointConfiguration configuration)
     {
         #region Utf8JsonSerialization
 
-        endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
+        configuration.UseSerialization<Utf8JsonSerializer>();
 
         #endregion
     }
 
-    void CustomSettings(EndpointConfiguration endpointConfiguration)
+    void CustomSettings(EndpointConfiguration configuration)
     {
         #region Utf8JsonResolver
 
-        var serialization = endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
+        var serialization = configuration.UseSerialization<Utf8JsonSerializer>();
         serialization.Resolver(StandardResolver.SnakeCase);
 
         #endregion
     }
 
-    void ContentTypeKey(EndpointConfiguration endpointConfiguration)
+    void ContentTypeKey(EndpointConfiguration configuration)
     {
         #region Utf8JsonContentTypeKey
 
-        var serialization = endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
+        var serialization = configuration.UseSerialization<Utf8JsonSerializer>();
         serialization.ContentTypeKey("custom-key");
 
         #endregion
