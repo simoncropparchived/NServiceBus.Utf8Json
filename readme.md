@@ -22,9 +22,7 @@ Add support for [NServiceBus](https://particular.net/NServiceBus) message serial
   * [Usage](#usage)
     * [Resolver](#resolver)
     * [Custom content key](#custom-content-key)
-  * [Currently not supported](#currently-not-supported)
-<!-- endtoc -->
-
+  * [Currently not supported](#currently-not-supported)<!-- endtoc -->
 
 <!--- StartOpenCollectiveBackers -->
 
@@ -59,7 +57,7 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 ```cs
 endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
 ```
-<sup>[snippet source](/src/Tests/Snippets/Usage.cs#L9-L13) / [anchor](#snippet-utf8jsonserialization)</sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L9-L13' title='File snippet `utf8jsonserialization` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsonserialization' title='Navigate to start of snippet `utf8jsonserialization`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -73,7 +71,7 @@ It is possible to customize the instance of [IJsonFormatterResolver](https://git
 var serialization = endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
 serialization.Resolver(StandardResolver.SnakeCase);
 ```
-<sup>[snippet source](/src/Tests/Snippets/Usage.cs#L18-L23) / [anchor](#snippet-utf8jsonresolver)</sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L18-L23' title='File snippet `utf8jsonresolver` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsonresolver' title='Navigate to start of snippet `utf8jsonresolver`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -87,7 +85,7 @@ When using [additional deserializers](https://docs.particular.net/nservicebus/se
 var serialization = endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
 serialization.ContentTypeKey("custom-key");
 ```
-<sup>[snippet source](/src/Tests/Snippets/Usage.cs#L28-L33) / [anchor](#snippet-utf8jsoncontenttypekey)</sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L28-L33' title='File snippet `utf8jsoncontenttypekey` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsoncontenttypekey' title='Navigate to start of snippet `utf8jsoncontenttypekey`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
