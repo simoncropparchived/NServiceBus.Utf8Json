@@ -31,7 +31,7 @@ Add support for [NServiceBus](https://particular.net/NServiceBus) message serial
 
 ## Community backed
 
-**It is expected that all developers [become a Patron](https://opencollective.com/nservicebusextensions/order/6976) to use any of these libraries. [Go to licensing FAQ](https://github.com/NServiceBusExtensions/Home/blob/master/readme.md#licensingpatron-faq)**
+**It is expected that all developers [become a Patron](https://opencollective.com/nservicebusextensions/order/6976) to use any of these libraries. [Go to licensing FAQ](https://github.com/NServiceBusExtensions/Home/#licensingpatron-faq)**
 
 
 ### Sponsors
@@ -50,12 +50,17 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 <a href="#" id="endofbacking"></a>
 
 
+## NuGet package
+
+https://nuget.org/packages/NServiceBus.Utf8Json/
+
+
 ## Usage
 
 <!-- snippet: Utf8JsonSerialization -->
 <a id='snippet-utf8jsonserialization'/></a>
 ```cs
-endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
+configuration.UseSerialization<Utf8JsonSerializer>();
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L9-L13' title='File snippet `utf8jsonserialization` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsonserialization' title='Navigate to start of snippet `utf8jsonserialization`'>anchor</a></sup>
 <!-- endsnippet -->
@@ -68,7 +73,7 @@ It is possible to customize the instance of [IJsonFormatterResolver](https://git
 <!-- snippet: Utf8JsonResolver -->
 <a id='snippet-utf8jsonresolver'/></a>
 ```cs
-var serialization = endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
+var serialization = configuration.UseSerialization<Utf8JsonSerializer>();
 serialization.Resolver(StandardResolver.SnakeCase);
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L18-L23' title='File snippet `utf8jsonresolver` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsonresolver' title='Navigate to start of snippet `utf8jsonresolver`'>anchor</a></sup>
@@ -82,7 +87,7 @@ When using [additional deserializers](https://docs.particular.net/nservicebus/se
 <!-- snippet: Utf8JsonContentTypeKey -->
 <a id='snippet-utf8jsoncontenttypekey'/></a>
 ```cs
-var serialization = endpointConfiguration.UseSerialization<Utf8JsonSerializer>();
+var serialization = configuration.UseSerialization<Utf8JsonSerializer>();
 serialization.ContentTypeKey("custom-key");
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L28-L33' title='File snippet `utf8jsoncontenttypekey` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsoncontenttypekey' title='Navigate to start of snippet `utf8jsoncontenttypekey`'>anchor</a></sup>
