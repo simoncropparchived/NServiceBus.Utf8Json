@@ -20,7 +20,8 @@ Add support for [NServiceBus](https://particular.net/NServiceBus) message serial
   * [Usage](#usage)
     * [Resolver](#resolver)
     * [Custom content key](#custom-content-key)
-  * [Currently not supported](#currently-not-supported)<!-- endtoc -->
+  * [Currently not supported](#currently-not-supported)
+  * [Security contact information](#security-contact-information)<!-- endtoc -->
 
 <!--- StartOpenCollectiveBackers -->
 
@@ -89,9 +90,9 @@ serialization.ContentTypeKey("custom-key");
 The use of `DataBusProperty<T>` is not supported because the property doesn't provide a default constructor. However, the use of the [databus conventions](https://docs.particular.net/nservicebus/messaging/databus) is supported.
 
 
-## Release Notes
+## Security contact information
 
-See [closed milestones](../../milestones?state=closed).
+To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
 
 
 ## Icon
