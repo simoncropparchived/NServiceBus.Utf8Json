@@ -17,8 +17,6 @@ Add support for [NServiceBus](https://particular.net/NServiceBus) message serial
 ## Contents
 
   * [Community backed](#community-backed)
-    * [Sponsors](#sponsors)
-    * [Patrons](#patrons)
   * [Usage](#usage)
     * [Resolver](#resolver)
     * [Custom content key](#custom-content-key)
