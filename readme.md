@@ -24,7 +24,7 @@ Add support for [NServiceBus](https://particular.net/NServiceBus) message serial
     * [Resolver](#resolver)
     * [Custom content key](#custom-content-key)
   * [Currently not supported](#currently-not-supported)
-  * [Security contact information](#security-contact-information)<!-- endtoc -->
+  * [Security contact information](#security-contact-information)<!-- endToc -->
 
 <!--- StartOpenCollectiveBackers -->
 
@@ -70,7 +70,7 @@ https://nuget.org/packages/NServiceBus.Utf8Json/
 configuration.UseSerialization<Utf8JsonSerializer>();
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L9-L13' title='File snippet `utf8jsonserialization` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsonserialization' title='Navigate to start of snippet `utf8jsonserialization`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 
 ### Resolver
@@ -84,7 +84,7 @@ var serialization = configuration.UseSerialization<Utf8JsonSerializer>();
 serialization.Resolver(StandardResolver.SnakeCase);
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L18-L23' title='File snippet `utf8jsonresolver` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsonresolver' title='Navigate to start of snippet `utf8jsonresolver`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 
 ### Custom content key
@@ -98,7 +98,7 @@ var serialization = configuration.UseSerialization<Utf8JsonSerializer>();
 serialization.ContentTypeKey("custom-key");
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L28-L33' title='File snippet `utf8jsoncontenttypekey` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsoncontenttypekey' title='Navigate to start of snippet `utf8jsoncontenttypekey`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 
 ## Currently not supported
