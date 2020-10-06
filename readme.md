@@ -65,11 +65,11 @@ https://nuget.org/packages/NServiceBus.Utf8Json/
 ## Usage
 
 <!-- snippet: Utf8JsonSerialization -->
-<a id='snippet-utf8jsonserialization'></a>
+<a id='ee651f82'></a>
 ```cs
 configuration.UseSerialization<Utf8JsonSerializer>();
 ```
-<sup><a href='/src/Tests/Snippets/Usage.cs#L9-L13' title='File snippet `utf8jsonserialization` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsonserialization' title='Navigate to start of snippet `utf8jsonserialization`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L9-L13' title='Snippet source file'>snippet source</a> | <a href='#ee651f82' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -78,12 +78,12 @@ configuration.UseSerialization<Utf8JsonSerializer>();
 It is possible to customize the instance of [IJsonFormatterResolver](https://github.com/neuecc/Utf8Json#resolver) used for serialization.
 
 <!-- snippet: Utf8JsonResolver -->
-<a id='snippet-utf8jsonresolver'></a>
+<a id='40af8865'></a>
 ```cs
 var serialization = configuration.UseSerialization<Utf8JsonSerializer>();
 serialization.Resolver(StandardResolver.SnakeCase);
 ```
-<sup><a href='/src/Tests/Snippets/Usage.cs#L18-L23' title='File snippet `utf8jsonresolver` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsonresolver' title='Navigate to start of snippet `utf8jsonresolver`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L18-L23' title='Snippet source file'>snippet source</a> | <a href='#40af8865' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
@@ -92,12 +92,12 @@ serialization.Resolver(StandardResolver.SnakeCase);
 When using [additional deserializers](https://docs.particular.net/nservicebus/serialization/#specifying-additional-deserializers) or transitioning between different versions of the same serializer it can be helpful to take explicit control over the content type a serializer passes to NServiceBus (to be used for the [ContentType header](https://docs.particular.net/nservicebus/messaging/headers#serialization-headers-nservicebus-contenttype)).
 
 <!-- snippet: Utf8JsonContentTypeKey -->
-<a id='snippet-utf8jsoncontenttypekey'></a>
+<a id='09fdbdbc'></a>
 ```cs
 var serialization = configuration.UseSerialization<Utf8JsonSerializer>();
 serialization.ContentTypeKey("custom-key");
 ```
-<sup><a href='/src/Tests/Snippets/Usage.cs#L28-L33' title='File snippet `utf8jsoncontenttypekey` was extracted from'>snippet source</a> | <a href='#snippet-utf8jsoncontenttypekey' title='Navigate to start of snippet `utf8jsoncontenttypekey`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L28-L33' title='Snippet source file'>snippet source</a> | <a href='#09fdbdbc' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
