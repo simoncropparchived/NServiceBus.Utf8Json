@@ -6,8 +6,6 @@
 
 Add support for [NServiceBus](https://particular.net/NServiceBus) message serialization via [Utf8Json](https://github.com/neuecc/Utf8Json)
 
-toc
-
 <!--- StartOpenCollectiveBackers -->
 
 [Already a Patron? skip past this section](#endofbacking)
@@ -66,11 +64,6 @@ snippet: Utf8JsonContentTypeKey
 ## Currently not supported
 
 The use of `DataBusProperty<T>` is not supported because the property doesn't provide a default constructor. However, the use of the [databus conventions](https://docs.particular.net/nservicebus/messaging/databus) is supported.
-
-
-## Security contact information
-
-To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
 
 
 ## Icon
