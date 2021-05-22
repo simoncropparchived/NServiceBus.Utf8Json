@@ -13,19 +13,6 @@ To change this file edit the source file and then run MarkdownSnippets.
 
 Add support for [NServiceBus](https://particular.net/NServiceBus) message serialization via [Utf8Json](https://github.com/neuecc/Utf8Json)
 
-<!-- toc -->
-## Contents
-
-  * [Community backed](#community-backed)
-    * [Sponsors](#sponsors)
-    * [Patrons](#patrons)
-  * [Support via TideLift](#support-via-tidelift)
-  * [Usage](#usage)
-    * [Resolver](#resolver)
-    * [Custom content key](#custom-content-key)
-  * [Currently not supported](#currently-not-supported)
-  * [Security contact information](#security-contact-information)<!-- endToc -->
-
 <!--- StartOpenCollectiveBackers -->
 
 [Already a Patron? skip past this section](#endofbacking)
@@ -104,11 +91,6 @@ serialization.ContentTypeKey("custom-key");
 ## Currently not supported
 
 The use of `DataBusProperty<T>` is not supported because the property doesn't provide a default constructor. However, the use of the [databus conventions](https://docs.particular.net/nservicebus/messaging/databus) is supported.
-
-
-## Security contact information
-
-To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
 
 
 ## Icon
