@@ -14,8 +14,8 @@ class JsonMessageSerializer :
 
     public JsonMessageSerializer(
         IMessageMapper messageMapper,
-        IJsonFormatterResolver resolver,
-        string contentType)
+        IJsonFormatterResolver? resolver,
+        string? contentType)
     {
         this.messageMapper = messageMapper;
 
@@ -46,7 +46,7 @@ class JsonMessageSerializer :
         }
         catch (TypeAccessException exception)
         {
-            throw new Exception($"Types need to be public. Type: {message.GetType().FullName}", exception);
+            throw new($"Types need to be public. Type: {message.GetType().FullName}", exception);
         }
     }
 
@@ -54,7 +54,7 @@ class JsonMessageSerializer :
     {
         if (messageTypes == null || !messageTypes.Any())
         {
-            throw new Exception("Utf8Json requires message types to be specified");
+            throw new("Utf8Json requires message types to be specified");
         }
 
         var rootTypes = FindRootTypes(messageTypes);
@@ -69,7 +69,7 @@ class JsonMessageSerializer :
                 }
                 catch (TypeAccessException exception)
                 {
-                    throw new Exception($"Types need to be public. Type: {messageType.FullName}", exception);
+                    throw new($"Types need to be public. Type: {messageType.FullName}", exception);
                 }
             })
             .ToArray();
