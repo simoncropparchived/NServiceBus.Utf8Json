@@ -18,8 +18,6 @@ namespace NServiceBus
         /// <param name="resolver">The <see cref="IJsonFormatterResolver"/> to use.</param>
         public static void Resolver(this SerializationExtensions<Utf8JsonSerializer> config, IJsonFormatterResolver resolver)
         {
-            Guard.AgainstNull(config, nameof(config));
-            Guard.AgainstNull(resolver, nameof(resolver));
             var settings = config.GetSettings();
             settings.Set(resolver);
         }
@@ -40,7 +38,6 @@ namespace NServiceBus
         /// <param name="contentTypeKey">The content type key to use.</param>
         public static void ContentTypeKey(this SerializationExtensions<Utf8JsonSerializer> config, string contentTypeKey)
         {
-            Guard.AgainstNull(config, nameof(config));
             Guard.AgainstNullOrEmpty(contentTypeKey, nameof(contentTypeKey));
             var settings = config.GetSettings();
             settings.Set("NServiceBus.Utf8Json.ContentTypeKey", contentTypeKey);
