@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using NServiceBus;
+﻿using NServiceBus;
 using NServiceBus.Utf8Json;
 
 class Program
