@@ -7,7 +7,7 @@ To change this file edit the source file and then run MarkdownSnippets.
 
 # <img src="/src/icon.png" height="30px"> NServiceBus.Utf8Json
 
-[![Build status](https://ci.appveyor.com/api/projects/status/oiqo5mrf54mh9iu8/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/nservicebus-Utf8Json)
+[![Build status](https://ci.appveyor.com/api/projects/status/oiqo5mrf54mh9iu8/branch/main?svg=true)](https://ci.appveyor.com/project/SimonCropp/nservicebus-Utf8Json)
 [![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.Utf8Json.svg)](https://www.nuget.org/packages/NServiceBus.Utf8Json/)
 
 
